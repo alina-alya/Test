@@ -1,24 +1,76 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <title>Valentines day</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>Valentine's Day</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Screen 1 -->
+  <section class="screen" id="screen-1" data-active>
     <div class="card">
-        <h1 id="title">I have one question for you</h1>
-        <p id="text">Will you be my valantine?</p>
-        
-        <div class="buttons">
-            <button id="yes">Yes</button>
-            <button id="no">No</button>
-        </div>
+      <h1>I have one question for you</h1>
+      <p>Will you be my valentine? 👉🏻👈🏻</p>
+      <img src="https://i.pinimg.com/originals/84/ea/74/84ea74313ed80e1ae0c4821ad492f021.jpg" alt="Valentine image" class="screen-image">
+      <div class="buttons">
+        <button id="yes-large" class="btn yes">Yes 💖</button>
+        <button id="no-small" class="btn no tiny">No 🤡</button>
+      </div>
     </div>
+  </section>
 
-    <script src="script.js"></script>
+  <!-- Screen 2 -->
+  <section class="screen" id="screen-2">
+    <div class="card">
+      <div class="video-wrap">
+        <video controls>
+          <source src="No.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <p class="muted">Are you sure in your choice? 🤨</p>
+      <div class="buttons">
+        <button id="screen2-yes" class="btn no tiny">Yes</button>
+        <button id="screen2-no" class="btn yes">No, sorry mi amor, it was a joke</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Screen 3 -->
+  <section class="screen" id="screen-3">
+    <div class="card">
+      <h2>Good choice cariño</h2>
+      <p>Because you know that I have plan B with one beautiful and comfortable room for you 🤭</p>
+      <img src="https://i.redd.it/p21p8ctqfaze1.png" alt="Cozy room" class="room-image">
+      <form id="plans" class="plans">
+        <label><input type="radio" name="plan" value="A" checked> Plan A</label>
+        <label><input type="radio" name="plan" value="B"> Plan B</label>
+        <button type="button" id="confirm-plan" class="btn yes">Confirm</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Popup -->
+  <div id="popup" class="popup hidden">
+    <div class="popup-card">
+      <p class="popup-text">Pinche vieja. Your choice is plan A, ash 😠</p>
+      <img src="https://media.tenor.com/xEr-E1TVhekAAAAM/angry-monkey.gif" alt="Popup image" class="popup-image">
+      <button id="force-planA" class="btn yes">Plan A</button>
+    </div>
+  </div>
+
+  <!-- Final Screen -->
+  <section class="screen" id="screen-final">
+    <div class="card">
+      <h1>Yeeeeiii, very good choice mi corazón!</h1>
+      <p>I promise that you will be happy with me, my princess 🥰</p>
+      <p> We can start exactly from now. You can order whatever you want, I'll pay for our dinner 🌮</p>
+      <img src="https://c.tenor.com/tG4EcO0MqkwAAAAd/tenor.gif" alt="Final GIF" class="screen-image">
+      <audio id="final-audio" src="ssstik.io_1771004248546.mp3"></audio>
+    </div>
+  </section>
+
+  <script src="script.js" defer></script>
 </body>
-
 </html>
-
-
